@@ -30,8 +30,7 @@ jobs:
     # script:
     - run: npm run test
     - name: coveralls
-      with:
-        run: npm run coveralls
+      run: npm run coveralls
       env:
         COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
 
