@@ -20,7 +20,7 @@ export interface Status {
 }
 
 export interface Submit {
-  async (ev: MessageEvent): Status
+  (ev: MessageEvent): Promise<Status>
 }
 
 export class RingCentralNotificationIntegrationHelper {
@@ -55,12 +55,12 @@ export class RingCentralNotificationIntegrationHelper {
     return window.open(url, this.getFrameName())
   }
 
-  handle (channel: string, handler: Function) {
+  handle (channel: string, handler: Submit) {
     this.handler = this.createHandler(channel, handler)
     window.addEventListener('message', this.handler)
   }
 
-  createHandler (channelName: string, handler: Function): Listener {
+  createHandler (channelName: string, handler: Submit): Listener {
     return async (e) => {
       if (!e || !e.data) {
         return false
