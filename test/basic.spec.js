@@ -41,6 +41,9 @@ describe('RingCentralNotificationIntegrationHelper', () => {
       } else {
         x = e.data.payload
       }
+      return {
+        status: true
+      }
     })
     window.postMessage({
       type: 'handle',

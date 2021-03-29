@@ -15,6 +15,14 @@ export interface CanSubmit {
   canSubmit: Boolean
 }
 
+export interface Status {
+  status: Boolean
+}
+
+export interface Submit {
+  async (ev: MessageEvent): Status
+}
+
 export class RingCentralNotificationIntegrationHelper {
   handler: Listener
 
@@ -33,7 +41,7 @@ export class RingCentralNotificationIntegrationHelper {
     return arr ? arr[1] : ''
   }
 
-  on (eventName: string, handler: Function) {
+  on (eventName: string, handler: Submit) {
     this.handle(RingCentralNotificationIntegrationHelper.MESSAGE_CHANNEL.submitted, handler)
   }
 

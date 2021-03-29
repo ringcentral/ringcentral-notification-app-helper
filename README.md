@@ -26,7 +26,13 @@ app.send({
 
 // Receive message from RingCentral app that
 // user already click submit button so integration can proceed to submit.
-app.on('submit', someSubmitFunction: Function)
+app.on('submit', async function someSubmitFunction (e) {
+  console.log(e.data.payload)
+  // do something like submit
+  return {
+    status: true // when true, RingCentral app will close integration window
+  }
+})
 
 // Open window with proper params so user can do authorization
 // in opened window by RingCentral, window.open would not work,
