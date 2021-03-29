@@ -1,10 +1,10 @@
 {
   "name": "ringcentral-notification-integration-helper",
-  "version": "1.37.3",
+  "version": "0.1.0",
   "description": "RingCentral Engage Voice API js wrapper",
-  "main": "dist/engage-voice",
-  "module": "src/engage-voice.ts",
-  "types": "dist/engage-voice",
+  "main": "dist/ringcentral-notification-integration-helper.js",
+  "module": "src/index.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "standard && jest --coverage",
     "release": "rm -rf dist && webpack --progress --config webpack.config.babel.js",
