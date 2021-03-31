@@ -29,8 +29,9 @@ app.send({
 app.on('submit', async function someSubmitFunction (e) {
   console.log(e.data.payload)
   // do something like submit
+  const submitSuccess = await doSubmit()
   return {
-    status: true // when true, RingCentral app will close integration window
+    status: !!submitSuccess // true means submit success, RingCentral app will close integration window
   }
 })
 
