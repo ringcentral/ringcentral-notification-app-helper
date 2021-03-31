@@ -1,9 +1,8 @@
 {
   "name": "ringcentral-notification-integration-helper",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "RingCentral Engage Voice API js wrapper",
   "main": "dist/ringcentral-notification-integration-helper.js",
-  "module": "src/index.ts",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "standard && jest --coverage",
