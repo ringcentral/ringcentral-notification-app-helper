@@ -73,20 +73,29 @@ export class RingCentralNotificationIntegrationHelper {
         return false
       }
       const res = await handler(e)
+      let sender: any = window.parent
+      if (e.ports && e.ports.length) {
+        sender = e.ports[0]
+      }
       this.notify(channel, {
         type: 'event',
         channel,
         payload: res
-      })
+      }, sender)
     }
   }
 
-  notify (channel: string, data: Data) {
-    window.parent.postMessage({
+  notify (channel: string, data: Data, sender: any = window.parent) {
+    const obj: any = {
       type: 'event',
       channel,
       payload: data
-    }, '*')
+    }
+    if (sender === window.parent) {
+      sender.postMessage(obj, '*')
+    } else {
+      sender.postMessage(obj)
+    }
   }
 
   dispose () {
