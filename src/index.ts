@@ -89,6 +89,7 @@ export class RingCentralNotificationIntegrationHelper {
     const obj: any = {
       type: 'event',
       channel,
+      code: 200,
       payload: data
     }
     if (sender === window.parent) {
