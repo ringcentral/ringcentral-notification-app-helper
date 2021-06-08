@@ -77,11 +77,7 @@ export class RingCentralNotificationIntegrationHelper {
       if (e.ports && e.ports.length) {
         sender = e.ports[0]
       }
-      this.notify(channel, {
-        type: 'event',
-        channel,
-        payload: res
-      }, sender)
+      this.notify(channel, res, sender)
     }
   }
 
