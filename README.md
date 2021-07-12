@@ -1,4 +1,4 @@
-# ringcentral-notification-integration-helper
+# RingCentral notification app helper
 
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fatrox%2Fsync-dotenv%2Fbadge)](https://github.com/ringcentral/ringcentral-notification-integration-helper/actions)
 [![Coverage Status](https://coveralls.io/repos/github/ringcentral/ringcentral-notification-integration-helper/badge.svg?branch=release)](https://coveralls.io/github/ringcentral/ringcentral-notification-integration-helper?branch=release)
