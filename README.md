@@ -56,6 +56,10 @@ npm run test
 
 - [Developer tool to simulate running in RingCentral App](https://github.com/ringcentral/ringcentral-notification-app-developer-tool)
 
+## Framework
+
+- [https://github.com/ringcentral/notification-app-js](https://github.com/ringcentral/notification-app-js)
+
 ## License
 
 MIT
