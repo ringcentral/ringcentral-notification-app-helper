@@ -51,6 +51,7 @@ npm run test
 ## Real world demo
 
 - [ringcentral-notification-app with UI(authorization and else)](https://github.com/ringcentral/ringcentral-notification-demo-ui-app)
+- [github-notification-app-demo](https://github.com/ringcentral/github-notification-app-demo)
 
 ## Tools
 
