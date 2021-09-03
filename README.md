@@ -12,9 +12,15 @@ npm i ringcentral-notification-integration-helper -D
 ```
 
 ```js
-import { RingCentralNotificationIntegrationHelper } from 'ringcentral-notification-integration-helper'
+import {
+  RingCentralNotificationIntegrationHelper
+} from 'ringcentral-notification-integration-helper'
 // or
-// const { RingCentralNotificationIntegrationHelper } = require('ringcentral-notification-integration-helper')
+/*
+const {
+  RingCentralNotificationIntegrationHelper
+} = require('ringcentral-notification-integration-helper')
+*/
 
 const app = new RingCentralNotificationIntegrationHelper()
 
@@ -31,7 +37,8 @@ app.on('submit', async function someSubmitFunction (e) {
   // do something like submit
   const submitSuccess = await doSubmit()
   return {
-    status: !!submitSuccess // true means submit success, RingCentral app will close integration window
+    status: !!submitSuccess
+    // true means submit success, RingCentral app will close integration window
   }
 })
 
