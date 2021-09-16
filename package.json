@@ -1,6 +1,6 @@
 {
   "name": "ringcentral-notification-integration-helper",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "RingCentral Engage Voice API js wrapper",
   "main": "dist/ringcentral-notification-integration-helper.js",
   "types": "dist/index.d.ts",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ringcentral/engage-voice-js.git"
+    "url": "git+https://github.com/ringcentral/ringcentral-notification-integration-helper.git"
   },
   "keywords": [
     "RingCentral",
@@ -27,9 +27,9 @@
   "author": "Drake Zhao <drake.zhao@ringcentral.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ringcentral/engage-voice-js/issues"
+    "url": "https://github.com/ringcentral/ringcentral-notification-integration-helper/issues"
   },
-  "homepage": "https://github.com/ringcentral/engage-voice-js#readme",
+  "homepage": "https://github.com/ringcentral/ringcentral-notification-integration-helper#readme",
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.12.7",
